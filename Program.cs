@@ -6,7 +6,6 @@ var app = builder.Build();
 app.MapGet("/", () =>
 {
     var exeDir = Path.GetDirectoryName(Environment.ProcessPath);
-    Console.WriteLine(exeDir);
     var process = new Process
     {
         StartInfo = new()
